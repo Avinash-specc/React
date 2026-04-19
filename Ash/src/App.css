@@ -1,0 +1,19 @@
+.container{
+    text-align: center;
+    height: 25vh;
+    width: 25vw;
+    margin: auto;
+    background-color: rgb(70, 211, 54);
+    border-radius: 1rem;
+}
+
+button{
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgb(110, 187, 255);
+}
+p{
+    padding-top: 10px;
+    color:magenta;
+    font-weight: 900;
+}
