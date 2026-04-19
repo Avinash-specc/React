@@ -1,14 +1,20 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+ //syntax
+// const [stateValue,setterFunction] = useState(initialValue)
 import './App.css'
-import Greeting from './components/Greeting'
+import Greeting from './components/Counter'
 
-function App() {
+function Counter() {
+  const [count,setCount] = useState(0);
   return (
     <>
-      <Greeting name = {'Avinash'} age = {19} />
+      <div>
+        <p>Count: {count}</p>
+        <button onClick={()=> setCount(count+1)}>Increment</button>
+        <button onClick={()=> setCount(count-1)}>Decrement</button>
+        <button onClick={()=> setCount(0)}>reset</button>
+        
+      </div>
     </>
   )
 }
@@ -21,4 +27,4 @@ all tags must be closed - self closing or with closing tag
 
 */
 
-export default App
+export default Counter
